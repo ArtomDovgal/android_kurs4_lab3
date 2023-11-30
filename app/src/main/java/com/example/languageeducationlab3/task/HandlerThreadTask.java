@@ -14,7 +14,7 @@ public class HandlerThreadTask implements Task {
     private static Handler handler;
     private static final Handler handlerMain = new Handler(Looper.getMainLooper());
 
-    static{
+    static {
         THREAD.start();
         handler = new Handler(THREAD.getLooper());
     }
@@ -22,38 +22,41 @@ public class HandlerThreadTask implements Task {
     private DownloadWords downloadWords;
     private Runnable runnable;
 
-    public HandlerThreadTask(DownloadWords downloadWords){this.downloadWords = downloadWords;}
+    public HandlerThreadTask(DownloadWords downloadWords) {
+        this.downloadWords = downloadWords;
+    }
 
     @Override
     public void execute(TaskListener listener) {
-        if(executed) throw new RuntimeException("Downloading words have been already executed");
+        if (executed) throw new RuntimeException("Downloading words have been already executed");
         executed = true;
         this.taskListener = listener;
 
-        runnable = () ->{
+        runnable = () -> {
             try {
+                Log.d("Downloading words", THREAD.getName());
                 downloadWords.downloadWords();
                 publishResult();
-            }catch (Exception e){
-                Log.e(THREAD_NAME,"---",e.fillInStackTrace());
+            } catch (Exception e) {
+                Log.e(THREAD_NAME, "---", e.fillInStackTrace());
             }
         };
         handler.post(runnable);
     }
 
-    private void publishResult(){
-        runOnMainThread(()->{
-            if(taskListener != null) {
+    private void publishResult() {
+        runOnMainThread(() -> {
+            if (taskListener != null) {
                 taskListener.onResult();
                 taskListener = null;
             }
         });
     }
 
-    private void runOnMainThread(Runnable action){
-        if(Thread.currentThread().getId() == Looper.getMainLooper().getThread().getId()){
+    private void runOnMainThread(Runnable action) {
+        if (Thread.currentThread().getId() == Looper.getMainLooper().getThread().getId()) {
             action.run();
-        }else{
+        } else {
             handlerMain.post(action);
         }
     }
