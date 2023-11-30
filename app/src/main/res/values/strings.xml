@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">LanguageEducationLab3</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <string name="next_ua">Далі</string>
+    <string name="finish_ua">Закінчити</string>
+    <string name="сorrect_ua">Правильно</string>
+    <string name="wrong_ua">Неправильно</string>
+    <string name="setting_ua">Налаштування</string>
+    <string name="result_ua">Результат</string>
+    <string name="numb_correct_answer_ua">Кількість правильних відповідей:</string>
+    <string name="numb_wrong_answer_ua">Кількість неправильних відповідей:</string>
+    <string name="check_ua">Перевірити</string>
+    <string name="language_ua">Мова : </string>
+    <string name="time_timer_ua">Тривалість таймеру :</string>
+    <string name="test_with_variants">Тест з варіантами</string>
+    <string name="test_with_input">Тест з введенням відповіді</string>
+    <string name="time_is_end_ua">Час вийшов!\n</string>
+    <string name="input_translate">Введіть переклад</string>
+    <string name="to_check_ua">Перевірити</string>
+    <string name="on_main_page">На головну сторінку</string>
+    <string name="english">Англійська</string>
+    <string name="german">Німецька</string>
+    <string name="time_of_timer_ua">Тривалість таймеру :</string>
+    <string name="test_with_variants_ua">Тест з варіантами</string>
+    <string name="test_with_input_ua">Тест з введенням відповіді</string>
+    <string name="twenty_secont_ua">20с</string>
+    <string name="thirty_second_ua">30с</string>
+    <string name="sixty_second_ua">60с</string>
+    <string name="word">Слово</string>
+
+    <string-array name="english_word">
+        <item>body</item>
+        <item>house</item>
+        <item>car</item>
+        <item>tree</item>
+        <item>cat</item>
+        <item>dog</item>
+        <item>book</item>
+        <item>computer</item>
+        <item>phone</item>
+        <item>table</item>
+        <item>chair</item>
+        <item>flower</item>
+        <item>sun</item>
+        <item>moon</item>
+        <item>water</item>
+    </string-array>
+
+    <string-array name="english_translate">
+        <item>тіло</item>
+        <item>будинок</item>
+        <item>автомобіль</item>
+        <item>дерево</item>
+        <item>кіт</item>
+        <item>собака</item>
+        <item>книга</item>
+        <item>комп\'ютер</item>
+        <item>телефон</item>
+        <item>стіл</item>
+        <item>стілець</item>
+        <item>квітка</item>
+        <item>сонце</item>
+        <item>місяць</item>
+        <item>вода</item>
+    </string-array>
+
+    <string-array name="german_word">
+        <item>Körper</item>
+        <item>Haus</item>
+        <item>Auto</item>
+        <item>Baum</item>
+        <item>Katze</item>
+        <item>Hund</item>
+        <item>Buch</item>
+        <item>Computer</item>
+        <item>Telefon</item>
+        <item>Tisch</item>
+        <item>Stuhl</item>
+        <item>Blume</item>
+        <item>Sonne</item>
+        <item>Mond</item>
+        <item>Wasser</item>
+    </string-array>
+
+    <string-array name="german_translate">
+        <item>тіло</item>
+        <item>будинок</item>
+        <item>автомобіль</item>
+        <item>дерево</item>
+        <item>кіт</item>
+        <item>собака</item>
+        <item>книга</item>
+        <item>комп\'ютер</item>
+        <item>телефон</item>
+        <item>стіл</item>
+        <item>стілець</item>
+        <item>квітка</item>
+        <item>сонце</item>
+        <item>місяць</item>
+        <item>вода</item>
+    </string-array>
+</resources>
